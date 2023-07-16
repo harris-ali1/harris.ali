@@ -7,6 +7,9 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    
 </head>
 <body>
 <div id="header">
@@ -25,10 +28,20 @@
         </nav>
         <div class="header-text">
             <p>Computer Science Major</p>
-            <h1>Hi, I'm <span>Harris</span><br> and this is my World </h1>
-        </div>
+            <h1 class="header-title">
+              Hi, I'm <span id="name"></span>
+              <br>
+              and this is my World
+            </h1>
+            <p id="description-line-1">I'm a <span id="description"></span></p>
+          </div>
+          
+          
+          
     </div>
 </div>
+
+
 <!-- -----------about---------- -->
 <div id="about">
     <div class="container">
@@ -55,6 +68,7 @@
                 <div class="tab-contents" id="currently">
                     <ul>
                         <li><span>Working on</span><br>A web-based appication following a client structure architecture that will predict the rate of fuel</li>
+                        <li><span>Vice President of Coog Esports</span><br>Coog Esports is a massive organization that connects gamers, and it is the biggest Esports organization in Houston </li>
                         <li><span>Watching</span><br>One Piece, Jujutsu Kaisen and Vinland Saga</li>
                         <li><span>Reading</span><br>Ruination</li>
                         <li><span>Playing</span><br>League of Legends, Call of Duty and Street Fighter 6</li>
@@ -106,24 +120,24 @@
                 <img src="work-1.png">
                 <div class="layer">
                     <h3>Coogs Music</h3>
-                    <p>UwU</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <p>Music Database with full functionality. Built using Golang, SQL, HTML and CSS</p>
+                    <a href="https://team3.coogsmusic.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="draven.jpg">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>UwU</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>League Montage XD</h3>
+                    <p>Greatest Draven of all time</p>
+                    <a href="https://www.youtube.com/watch?v=atJ5bWUDvcA&t=120s" target="_blank" ><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="spidey.png">
                 <div class="layer">
-                    <h3>Fuel Rate Prediction App</h3>
-                    <p>UwU</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Fav Song</h3>
+                    <p>I feel beaten, but I can't give up</p>
+                    <a href="https://www.youtube.com/watch?v=7aUZtDaxS60" target="_blank" ><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -139,12 +153,12 @@
                 <p><i class="fas fa-paper-plane"></i> harrisadnan1@hotmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i> +1 (346)-373-2237</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/psychoticdraven/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/harris-ali1" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.instagram.com/harris.ali1/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.linkedin.com/in/harris-ali1/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a href="" download class="btn btn2">Download Resume</a>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -212,5 +226,9 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  
+  
+  <script src="index.js"></script>
+
 </body>
 </html>
