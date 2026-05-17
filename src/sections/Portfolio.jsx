@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaTimes, FaGithub } from "react-icons/fa";
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "Coogs Music",
@@ -8,7 +10,7 @@ const projects = [
     shortDesc: "Music database with full CRUD functionality.",
     desc: "A full-featured music database application built with a team. Users can browse, add, update, and delete music records. Features include artist pages, album listings, and song management with a clean UI backed by a relational database.",
     tech: ["Golang", "SQL", "HTML", "CSS"],
-    thumbnail: "/work-1.png",
+    thumbnail: `${base}work-1.png`,
     screenshots: [],
     github: "https://github.com/harris-ali1",
   },
@@ -18,9 +20,8 @@ const projects = [
     shortDesc: "Project management app with an integrated LLM.",
     desc: "Taskiq is a modern project management tool that integrates a large language model to help teams plan, prioritize, and summarize tasks. The LLM can generate task breakdowns, suggest deadlines, and answer questions about ongoing projects — all within a clean kanban-style interface.",
     tech: ["React", "Node.js", "LLM API", "SQL"],
-    thumbnail: "/TaskIQ_logo.png",
-    screenshots: ["taskiqwork.png", "taskiqwork2.png"],
-    // github: "https://github.com/harris-ali1",
+    thumbnail: `${base}TaskIQ_logo.png`,
+    screenshots: [`${base}taskiqwork.png`, `${base}taskiqwork2.png`],
   },
   {
     title: "Opinion Spam Detection",
@@ -28,20 +29,20 @@ const projects = [
     shortDesc: "ML model to detect fake or spam reviews.",
     desc: "A machine learning project focused on identifying deceptive and spam reviews using natural language processing techniques. Trained and evaluated multiple classifiers (Naive Bayes, SVM, and others) on labeled review datasets, achieving strong precision and recall scores for real-world applicability.",
     tech: ["Python", "scikit-learn", "NLTK", "Pandas"],
-    thumbnail: "/OSD.png",
+    thumbnail: `${base}OSD.png`,
     screenshots: [],
     github: "https://github.com/harris-ali1",
   },
-{
-  title: "Aircraft Trajectory Optimization",
-  tag: "Numerical Methods · Optimization",
-  shortDesc: "Optimized aircraft climb trajectory using nonlinear methods.",
-  desc: "A numerical optimization project focused on modeling and optimizing an aircraft climb trajectory. The project compares single shooting and direct collocation methods to solve nonlinear aircraft dynamics, with the goal of improving trajectory feasibility, convergence, and fuel efficiency.",
-  tech: ["Python", "NumPy", "SciPy", "Matplotlib", "CasADi", "IPOPT"],
-  thumbnail: "/ATO.png",
-  screenshots: [],
-  github: "https://github.com/harris-ali1",
-},
+  {
+    title: "Aircraft Trajectory Optimization",
+    tag: "Numerical Methods · Optimization",
+    shortDesc: "Optimized aircraft climb trajectory using nonlinear methods.",
+    desc: "A numerical optimization project focused on modeling and optimizing an aircraft climb trajectory. The project compares single shooting and direct collocation methods to solve nonlinear aircraft dynamics, with the goal of improving trajectory feasibility, convergence, and fuel efficiency.",
+    tech: ["Python", "NumPy", "SciPy", "Matplotlib", "CasADi", "IPOPT"],
+    thumbnail: `${base}ATO.png`,
+    screenshots: [],
+    github: "https://github.com/harris-ali1",
+  },
 ];
 
 // Placeholder screenshot component

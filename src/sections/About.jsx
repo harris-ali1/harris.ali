@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 export default function About() {
   const [tab, setTab] = useState("skills");
 
@@ -18,7 +20,7 @@ export default function About() {
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <img
-              src="/gradpic.jpg"
+              src={`${base}gradpic.jpg`}
               alt="Portrait"
               className="w-full rounded-2xl object-cover"
             />

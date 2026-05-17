@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 export default function Hero() {
   const fullName = "Harris";
   const roles = useMemo(() => ["CS Major", "Coder", "Gamer"], []);
@@ -50,7 +52,7 @@ export default function Hero() {
     >
       {/* Spinning circle image */}
       <img
-        src="/circle-3041437_1280.jpg"
+        src={`${base}circle-3041437_1280.jpg`}
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"
