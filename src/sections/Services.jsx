@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <section id="services" className="py-16">
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-4xl font-semibold md:text-6xl">My Services</h2>
+        <h2 className="text-4xl font-semibold md:text-6xl">What I Build</h2>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((it) => {
@@ -18,7 +18,7 @@ export default function Services() {
             return (
               <div
                 key={it.title}
-                className="rounded-xl bg-neutral-900 p-8 transition hover:-translate-y-2 hover:bg-accent hover:text-black"
+                className="rounded-xl bg-neutral-900 p-8 transition hover:-translate-y-2 hover:bg-accent hover:text-red-500"
               >
                 <Icon className="text-4xl" />
                 <h3 className="mt-6 text-2xl font-semibold">{it.title}</h3>

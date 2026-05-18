@@ -4,7 +4,7 @@ const base = import.meta.env.BASE_URL;
 
 export default function Hero() {
   const fullName = "Harris";
-  const roles = useMemo(() => ["CS Major", "Coder", "Gamer"], []);
+  const roles = useMemo(() => ["Software Engineer", "Full-Stack Developer", "AI/ML Developer", "MS Computer Science Student"], []);
 
   const [typedName, setTypedName] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
@@ -86,7 +86,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap gap-3">
             <a
               href="#portfolio"
-              className="rounded-md border border-accent px-6 py-3 hover:bg-accent hover:text-black transition"
+              className="rounded-md border border-accent px-6 py-3 hover:bg-accent hover:text-red-500 transition"
             >
               View Work
             </a>
